@@ -1,0 +1,10 @@
+ public List<Estudiante> getestudiantenoHumano() {
+        List<Estudiante> noHumano;
+        noHumano = new ArrayList<>();
+        for (Estudiante estudiante : this.estudiantes) {
+            if (estudiante.getEspecie() != "humano") {
+                noHumano.add(estudiante);
+
+            }
+        }
+        return noHumano;
